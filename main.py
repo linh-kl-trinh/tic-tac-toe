@@ -1,3 +1,12 @@
+import random
+
+def get_ai_move(board):
+    while True:
+        row = random.randint(0, 2)
+        col = random.randint(0, 2)
+        if board[row][col] == " ":
+            return row, col
+
 def print_board(board):
     print("-------------")
     for i in range(3):
@@ -26,8 +35,12 @@ def tic_tac_toe():
     print_board(board)
     while True:
         print("It's", current_player, "'s turn.")
-        row = int(input("Enter row (1, 2 or 3): ")) - 1
-        col = int(input("Enter column (1, 2 or 3): ")) - 1
+        if current_player == "X":
+            row = int(input("Enter row (1, 2 or 3): ")) - 1
+            col = int(input("Enter column (1, 2 or 3): ")) - 1
+        else:
+            row, col = get_ai_move(board)
+            print("AI chooses row", row+1, "and column", col+1)
         if board[row][col] != " ":
             print("Invalid move, try again.")
             continue
