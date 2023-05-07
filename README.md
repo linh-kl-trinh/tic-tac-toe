@@ -1,4 +1,4 @@
-# Tic Tac Toe
+# Tic Tac Toe with AI Opponent
 
 ## Description
 This is a simple two-player (player vs. AI opponent) Tic Tac Toe game written in Python. The game board is a 3x3 grid and players take turns marking a space with their respective symbol ("X" or "O"). The game ends when a player gets three of their symbols in a row (horizontally, vertically, or diagonally), or if all spaces on the board are filled without either player winning.
