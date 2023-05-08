@@ -11,4 +11,4 @@ This is a simple two-player (player vs. AI opponent) Tic Tac Toe game written in
 - `tic_tac_toe()`: This function initializes the game board, sets up the players and their symbols, and starts the game loop. It alternates between each player's turn and prompts them to input a row and column to mark their symbol on the board. It then checks if the game has been won or if it is a tie, and prints out the corresponding message before ending the game.
 
 ## How to play
-To play the game, simply run the `tic_tac_toe()` function in a Python environment or from the command line.
+To play the game, simply run the `main.py` file in a Python environment or from the command line.
